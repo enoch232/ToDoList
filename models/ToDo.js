@@ -17,3 +17,6 @@ module.exports.addTodo = function(newToDo, callback){
 	createtodo.finished = false;
 	createtodo.save(callback);
 }
+module.exports.deleteTodo = function(id, callback){
+	Todo.remove({_id: id}, callback);
+}

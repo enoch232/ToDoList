@@ -23,13 +23,21 @@ app.get('/api/todos/:_id', function(req, res){
 	});
 });
 app.post('/api/todos', function(req, res){
-	var todo = req.body.title;
-	Todo.addTodo(todo, function(err, todo){
+	Todo.addTodo(req.body.title, function(err, todo){
 		if (err){
 			throw err;
 		}
 		res.json(todo);
 	});
+});
+app.delete('/api/todos/:_id', function(req, res){
+	Todo.deleteTodo(req.params._id, function(err, todo){
+		if (err){
+			throw err;
+		}
+		res.json(todo);
+	});
+
 });
 app.listen(3000);
 console.log("Server now running at port 3000...");
