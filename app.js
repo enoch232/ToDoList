@@ -30,6 +30,14 @@ app.post('/api/todos', function(req, res){
 		res.json(todo);
 	});
 });
+app.put('/api/todos/:_id', function(req, res){
+	Todo.updateTodo(req.params._id, req.body, {}, function(err, todo){
+		if (err){
+			throw err;
+		}
+		res.json(todo);
+	});
+});
 app.delete('/api/todos/:_id', function(req, res){
 	Todo.deleteTodo(req.params._id, function(err, todo){
 		if (err){
