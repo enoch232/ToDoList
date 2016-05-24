@@ -1,8 +1,8 @@
 var express = require('express');
 var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
 var app = express();
-app.use(bodyParser.json());
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
 //mongoose.connect("mongodb://localhost:27017/todolist");
 mongoose.connect("mongodb://testuser:1234567890@ds013898.mlab.com:13898/todoapp")
 var db = mongoose.connection;

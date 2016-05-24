@@ -1,10 +1,13 @@
 $(document).ready(function(){
+
 	$("#make-btn").on("click",function(){
 		if ($("#title").val().length){
-			$.ajax("http://localhost:3000/api/todos", {
+			var data = $('#title').val();
+			$.ajax({
+				url: "http://localhost:3000/api/todos", 
 				type: "POST",
 				data: {
-					title: $('#title').val()
+					'title': data
 				},
 				success: function(){
 					alert("Success!");
