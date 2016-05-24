@@ -1,0 +1,40 @@
+body{
+	background-color:green;
+	text-align:center;
+}
+#todo-container{
+	text-align:center;
+}
+#first-page{
+	position:absolute;
+	top:30%;
+	left:35%;
+	width:400px;
+	min-height:250px;
+	background-color:white;
+	z-index:1000;
+	border:2px solid black;
+
+}
+#second-page{
+	position: absolute;
+	top:31%;
+	left:34.5%;
+	width:400px;
+	min-height:250px;
+	background-color:white;
+	z-index:999;
+	border:2px solid black;
+
+}
+#third-page{
+	top:32%;
+	left:34%;
+	position: absolute;
+	width:400px;
+	min-height:250px;
+	background-color:white;
+	z-index:998;
+	border:2px solid black;
+
+}
