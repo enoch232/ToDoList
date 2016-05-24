@@ -38,3 +38,19 @@ body{
 	border:2px solid black;
 
 }
+#title{
+	height:2rem;
+	font-size:2rem;
+	width:70%;
+	float:left;
+	display:inline-block;
+}
+#make-btn{
+	display:inline-block;
+	margin:0.2rem;
+	width:25%;
+	padding:0.2rem;
+	font-size:1.5rem;
+	float:left;
+	background-color:#18A689;
+}

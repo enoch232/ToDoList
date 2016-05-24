@@ -1,7 +1,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var todoSchema = new Schema({
-	title: String,
+	title: {
+		type: String,
+		required: true
+	},
 	finished: Boolean
 },{collection: "todo"});
 var Todo = module.exports = mongoose.model('todo', todoSchema);
