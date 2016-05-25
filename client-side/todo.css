@@ -1,19 +1,22 @@
 body{
+	font-family: 'Open Sans', sans-serif;
 	background-color:green;
 	text-align:center;
 }
 #todo-container{
-	text-align:left;
+	text-align:center;
 }
 #todo-holder{
+	text-align:left;
 	padding-left:1rem;
+	overflow: auto;
+	height:200px;
 }
 #first-page{
 	position:absolute;
 	top:30%;
 	left:35%;
 	width:400px;
-	overflow: auto;
 	height:250px;
 	background-color:white;
 	z-index:1000;
@@ -49,12 +52,14 @@ body{
 	display:inline-block;
 }
 #make-btn{
+	border-radius: 0.3rem;
 	text-align:center;
 	display:inline-block;
-	margin:0.2rem;
+	margin:0.1rem;
 	width:25%;
 	padding:0.2rem;
 	font-size:1.5rem;
 	float:left;
 	background-color:#18A689;
+	font-family: 'Open Sans', sans-serif;
 }
